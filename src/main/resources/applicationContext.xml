@@ -20,11 +20,6 @@
         http://www.springframework.org/schema/aop
        http://www.springframework.org/schema/aop/spring-aop-4.0.xsd
 ">
-    <mvc:annotation-driven></mvc:annotation-driven>
-    <context:component-scan base-package="com.neuedu.web"></context:component-scan>
-    <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
-        <property name="viewClass" value="org.springframework.web.servlet.view.JstlView"></property>
-        <property name="prefix" value="/WEB-INF/pages/"></property>
-        <property name="suffix" value=".jsp"></property>
-    </bean>
+    <context:component-scan base-package="om.neuedu.service"></context:component-scan>
+    <import resource="classpath:config/*.xml"></import>
 </beans>
